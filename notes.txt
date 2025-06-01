@@ -1,0 +1,54 @@
+MACFIND_FINALv9.go located in VERSIONS Directory
+
+Compile for Windows 32-bit:
+SH
+Copy code
+GOOS=windows GOARCH=386 go build -o macfinder-win32.exe MACFIND_FINALv9.go
+
+Compile for Windows 64-bit:
+SH
+Copy code
+GOOS=windows GOARCH=amd64 go build -o macfinder-win64.exe MACFIND_FINALv9.go
+
+Compile for Linux 32-bit:
+SH
+Copy code
+GOOS=linux GOARCH=386 go build -o macfinder-lnx32 MACFIND_FINALv9.go
+
+Compile for Linux 64-bit:
+SH
+Copy code
+GOOS=linux GOARCH=amd64 go build -o macfinder-lnx64 MACFIND_FINALv9.go
+
+Compile for macOS (64-bit):
+SH
+Copy code
+GOOS=darwin GOARCH=amd64 go build -o macfinder-apl MACFIND_FINALv9.go
+
+Compile for Raspberry Pi (ARM architecture):
+For ARMv6 (used in older Raspberry Pi models like the Raspberry Pi 1 and Zero):
+SH
+Copy code
+GOOS=linux GOARCH=arm GOARM=6 go build -o macfinder-rsbpi MACFIND_FINALv9.go
+
+For ARMv7 (used in Raspberry Pi 2 and 3):
+SH
+Copy code
+GOOS=linux GOARCH=arm GOARM=7 go build -o macfinder-rsbpi MACFIND_FINALv9.go
+
+For ARM64 (used in Raspberry Pi 3 Model B+ and 4):
+SH
+Copy code
+GOOS=linux GOARCH=arm64 go build -o macfinder-rsbpi MACFIND_FINALv9.go
+
+Compile for Apple Silicon Architecture macOS (named arm64):
+SH
+Copy code
+GOOS=darwin GOARCH=arm64 go build -o macfinder-apl_arm64 MACFIND_FINALv9.go
+
+Notes:
+GOOS specifies the target operating system.
+GOARCH specifies the target architecture.
+GOARM specifies the ARM version for ARM builds.
+For detailed cross-compilation support, you can check the official documentation: Go Cross Compilation.
+With these commands, you can create binaries for different platforms from any supported system as long as you have Go installed.
