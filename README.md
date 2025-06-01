@@ -1,7 +1,7 @@
 # MACFINDER
 #### A simple very fast MAC address vendor lookup command line application. The vendor database is embedded in executable. MACFINDER is written in GO and can vendor lookup over a hundred thousand mac address per second. MACFINDER takes any input and translates any mac address found on a line and places the vendor name of the mac address at the end of the line.
 
-#### MACFINDER can take the output of a and file or a GatherDB containing the output of commands such as "show mac address-table" and "show ip arp" and add the vendor for every device. One simple example of MACFINDER's utility is finding all Netgear devices on a campus. I would do this with the following command:
+#### MACFINDER can take the output of any text file such as a GatherDB containing the output of commands such as "show mac address-table" and "show ip arp" and add the vendor for every device. One simple example of MACFINDER's utility is finding all Netgear devices on any size campus. I would do this with the following command:
 
 ```
 cat GatherDB | grep "show mac address-table" | macfinder | grep -i netgear
