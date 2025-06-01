@@ -67,6 +67,16 @@ macfinder -mac 841b.5e91.7e2d
 Output with Vendor Information:
 841b.5e91.7e2d  Vendor: NETGEAR
 ```
+#### Executables binaries available for download
+```
+macfinder-apl - apple mac
+macfinder-lnx32 - Linux 32 bit
+macfinder-lnx64 - Linux 64 bit
+macfinder-rsbpi - Raspberry Pie
+macfinder-win32.exe - Windows 32 bit
+macfinder-win64.exe - Windows 64 bit
+```
+#### Further instructions to compile the Go code are in notes. Make sure the oui_v2.txt file/TextDB is in the same directory when compiling. The Go code is in the file named MACFIND_FINALv9.go.
 
 
 
